@@ -1,6 +1,6 @@
 {
   "name": "angoose-users",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "User management extension for angoose",
   "main": "index.js",
   "scripts": {
@@ -22,13 +22,13 @@
   "bugs": {
     "url": "https://github.com/tjworks/angoose-users/issues"
   },
-   "devDependencies": {
+  "devDependencies": {
     "request": "*",
     "node-mocks-http": "*",
-    "q":"*"
+    "q": "*"
   },
   "dependencies": {
-  	"angoose": "*",
+    "angoose": "*",
     "underscore": "*"
   }
 }
