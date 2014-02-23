@@ -31,7 +31,8 @@ service.signin = function(username, password, $callback){
                     userId: user._id,
                     roles: user.roles
                 }               
-                
+                // keep user in session
+                $context.getRequest().session.user = user;
                 $callback(false, ret);
         }); // end inContext
 }
@@ -42,7 +43,7 @@ service.signin = function(username, password, $callback){
  */
 service.signout = function(  $callback){
     var $context = angoose.getContext();
-    $context.getRequest().session.destroy();
+    $context.getRequest().session.user = null;
     $callback(false);
 }
  

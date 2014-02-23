@@ -27,10 +27,16 @@ function setup(cb){
 }
 
 setup(function(user){
+    
     console.log("Got user", user)
     var service = angoose.client().module("LoginService");
     service.signin(u.email, "xxx", function(err, user){
-       console.log("\n\n\nLogin complete", err, user); 
+       console.log("Login complete", err, user); 
+       
+       console.log("\n\n\n######## ")
+       console.log(user? "SUCCESS!":"FAILED");
+       
+       //service.signout(u.email);
     });
     
 })
