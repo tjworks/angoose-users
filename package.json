@@ -1,0 +1,34 @@
+{
+  "name": "angoose-users",
+  "version": "0.0.1",
+  "description": "User management extension for angoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tjworks/angoose-users.git"
+  },
+  "keywords": [
+    "angoose",
+    "user",
+    "groups",
+    "authentication",
+    "authorization"
+  ],
+  "author": "tjworks",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/tjworks/angoose-users/issues"
+  },
+   "devDependencies": {
+    "request": "*",
+    "node-mocks-http": "*",
+    "q":"*"
+  },
+  "dependencies": {
+  	"angoose": "*",
+    "underscore": "*"
+  }
+}
